@@ -19,10 +19,12 @@ end
 function AI:update(dt)
     self:move(dt)
 
+    -- Comment this back in for AI Mortality
     --(AI mortality)
     --self.timer = self.timer + dt
     --if self.timer > self.rate then
        -- self.timer = 0
+    -- end
    
     self:aquireTarget()
 end
